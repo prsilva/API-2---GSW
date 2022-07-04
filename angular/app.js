@@ -12,7 +12,7 @@ crud.controller('controller', function ($scope) {
   ];
 
   $scope.salvar = function () {
-    $scope.cadastro.push($scope.novoCadastro);
+    $scope.cadastros.push($scope.novoCadastro);
     $scope.novoCadastro = {};
   };
 
@@ -23,8 +23,8 @@ crud.controller('controller', function ($scope) {
   $scope.alterarCadastro = function () {};
 
   $scope.excluirCadastro = function () {
-    $scope.cadastro.splice(
-      $scope.cadastro.indexOf($scope.cadastroSelecionado),
+    $scope.cadastros.splice(
+      $scope.cadastros.indexOf($scope.cadastroSelecionado),
       1,
     );
   };
