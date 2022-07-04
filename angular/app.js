@@ -1,13 +1,13 @@
 var crud = angular.module('crud', []);
 
 crud.controller('controller', function ($scope) {
-  $scope.novoCliente = {};
-  $scope.clienteSelecionado = {};
+  $scope.novoCadastro = {};
+  $scope.cadastroSelecionado = {};
 
-  $scope.clientes = [
-    { nome: 'Priscila Silva', moedas: 5, troféus: 2 },
-    { nome: 'Gabriel Souza', moedas: 8, troféus: 3 },
-    { nome: 'Lucas Braz', moedas: 12, troféus: 6 },
+  $scope.cadastros = [
+    { nome: 'Priscila Silva', moedas: 5, trofeus: 2 },
+    { nome: 'Gabriel Souza', moedas: 8, trofeus: 3 },
+    { nome: 'Lucas Braz', moedas: 12, trofeus: 6 },
     ,
   ];
 

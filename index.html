@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Crud com AngularJS</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+  <title>CRUD com AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="angular/angular.min.js"></script>
   <script src="angular/app.js"></script>
 </head>
 
-<body ng-controller="controller" style="background-color: #f7f7f9">
+<body ng-controller="controller" style="background-color: #d1b4ec">
   <hr>
   <div class='col-sm-offset-4 col-sm-4'>
     <h2> Listagem de Jogadores </h2>
@@ -24,16 +25,16 @@
       <thead>
         <tr>
           <th style="border: 0px;">Nome</th>
-          <th style="border: 0px;">Moedas</th>
           <th style="border: 0px;">Troféus</th>
+          <th style="border: 0px;">Moedas</th>
         </tr>
       </thead>
 
       <tbody>
         <tr ng-repeat="cadastro in cadastros">
           <td>{{cadastro.nome}}</td>
-          <td>{{cadastro.moeda}}</td>
-          <td>{{cadastro.trofeu}}</td>
+          <td>{{cadastro.trofeus}}</td>
+          <td>{{cadastro.moedas}}</td>
           <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalEditar" ng-click="selecionaCadastro(cadastro)">Editar</button>
           </td>
@@ -66,16 +67,16 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2">Moedas</label>
+              <label class="control-label col-sm-2">Troféus</label>
               <div class="col-sm-10">
-                <input type="number" class="form-control" placeholder="Moedas..." ng-model="novoCadastro.moedas">
+                <input type="number" class="form-control" placeholder="Troféus..." ng-model="novoCadastro.trofeus">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2">Troféus</label>
+              <label class="control-label col-sm-2">Moedas</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" placeholder="Troféus..." ng-model="novoCadastro.trofeus">
+                <input type="number" class="form-control" placeholder="Moedas..." ng-model="novoCadastro.moedas">
               </div>
             </div>
 
@@ -93,7 +94,6 @@
 
     </div>
   </div>
-
 
   <!-- Modal -->
   <div class="modal fade" id="myModalEditar" role="dialog">
@@ -115,16 +115,16 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2">Moedas</label>
+              <label class="control-label col-sm-2">Troféus</label>
               <div class="col-sm-10">
-                <input type="number" class="form-control" placeholder="Moedas..." ng-model="cadastroSelecionado.moedas">
+                <input type="number" class="form-control" placeholder="Troféus..." ng-model="cadastroSelecionado.trofeus">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2">Troféus</label>
+              <label class="control-label col-sm-2">Moedas</label>
               <div class="col-sm-10">
-                <input type="number" class="form-control" placeholder="Troféus..." ng-model="cadastroSelecionado.trofeus">
+                <input type="number" class="form-control" placeholder="Moedas..." ng-model="cadastroSelecionado.moedas">
               </div>
             </div>
 
