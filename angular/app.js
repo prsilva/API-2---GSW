@@ -5,9 +5,9 @@ crud.controller('controller', function ($scope) {
   $scope.cadastroSelecionado = {};
 
   $scope.cadastros = [
-    { nome: 'Priscila Silva', moedas: 5, trofeus: 2 },
-    { nome: 'Gabriel Souza', moedas: 8, trofeus: 3 },
-    { nome: 'Lucas Braz', moedas: 12, trofeus: 6 },
+    { nome: 'Priscila Silva', moedas: 5, trofeus: 2, medalhas: 1 },
+    { nome: 'Gabriel Souza', moedas: 8, trofeus: 3, medalhas: 2 },
+    { nome: 'Lucas Braz', moedas: 12, trofeus: 6, medalhas: 4 },
     ,
   ];
 

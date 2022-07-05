@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CRUD com AngularJS</title>
+  <title>CRUD AngularJS</title>
   <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,6 +27,8 @@
           <th style="border: 0px;">Nome</th>
           <th style="border: 0px;">Troféus</th>
           <th style="border: 0px;">Moedas</th>
+          <th style="border: 0px;">Medalhas</th>
+
         </tr>
       </thead>
 
@@ -35,6 +37,8 @@
           <td>{{cadastro.nome}}</td>
           <td>{{cadastro.trofeus}}</td>
           <td>{{cadastro.moedas}}</td>
+          <td>{{cadastro.medalhas}}</td>
+
           <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalEditar" ng-click="selecionaCadastro(cadastro)">Editar</button>
           </td>
