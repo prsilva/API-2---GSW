@@ -8,7 +8,6 @@ crud.controller('controller', function ($scope) {
     { nome: 'Priscila Silva', moedas: 5, trofeus: 2, medalhas: 1 },
     { nome: 'Gabriel Souza', moedas: 8, trofeus: 3, medalhas: 2 },
     { nome: 'Lucas Braz', moedas: 12, trofeus: 6, medalhas: 4 },
-    ,
   ];
 
   $scope.salvar = function () {
@@ -17,7 +16,7 @@ crud.controller('controller', function ($scope) {
   };
 
   $scope.selecionaCadastro = function (cadastro) {
-    $scope.selecionaCadastro = cadastro;
+    $scope.cadastroSelecionado = cadastro;
   };
 
   $scope.alterarCadastro = function () {};
